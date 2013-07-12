@@ -1,0 +1,2 @@
+winrar:
+  pkg.installed
