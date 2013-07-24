@@ -21,7 +21,6 @@ def managed(name, hkey, path, key, value):
     """
     foo:
       winreg.managed:
-        - order: 2
         - hkey: HKEY_LOCAL_MACHINE
         - path: SOFTWARE\\Salt
         - key: version
@@ -63,7 +62,6 @@ def absent(name, hkey, path, key):
     """
     bar:
       winreg.absent:
-        - order: 1
         - hkey: HKEY_LOCAL_MACHINE
         - path: SOFTWARE\\Salt
         - key: version
